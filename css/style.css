@@ -13,27 +13,13 @@
     --details: #b5f62f;
 }
 
-.upgrade{
-    height: 50px;
-}
-
-.top{
-    height: calc(100vh - 70px);
+.flex{
     display: flex;
 }
 
-.sidebar{
-    width:70px;
+ul{
+    list-style: none;
 }
-
-.content{
-    width: calc(100% - 50px);
-}
-
-#app_footer{
-    height: 70px;
-}
-
 /*Debug*/
 
 .top{
@@ -51,6 +37,19 @@
 .upgrade{
     background-color: crimson;
 }
+
+.side-top, .side-bottom{
+    border: 1px dashed red;
+    height: 50%;
+}
+
+#app_footer .left,
+#app_footer .center,
+#app_footer .right{
+    border: 1px solid blue;
+}
+
+
 /*Responsive*/ 
 
 @media screen and (min-width: 480px) {
@@ -62,4 +61,49 @@
 
 @media screen and (min-width: 1100px) {
     
+    
+}
+
+/*Top*/
+.top{
+    height: calc(100vh - 70px);
+}
+
+/*Sidebar*/
+
+.sidebar{
+    width:70px;
+}
+    
+
+/*Content*/
+
+.upgrade{
+    height: 50px;
+    text-align: end;
+}
+    
+.content{
+    width: calc(100% - 50px);
+}
+ 
+.content nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content nav li{
+    margin-left: 5rem;
+}
+/*Footer*/
+
+#app_footer{
+    height: 70px;
+}
+
+
+#app_footer .left,
+#app_footer .center,
+#app_footer .right{
+    width: calc(100% / 12 * 4);
 }
