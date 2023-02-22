@@ -12,3 +12,54 @@
     --lightgrey: #a3a3a3;
     --details: #b5f62f;
 }
+
+.upgrade{
+    height: 50px;
+}
+
+.top{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.sidebar{
+    width:70px;
+}
+
+.content{
+    width: calc(100% - 50px);
+}
+
+#app_footer{
+    height: 70px;
+}
+
+/*Debug*/
+
+.top{
+    background-color: coral;
+}
+
+#app_footer{
+    background-color: var(--footer);
+}
+
+.sidebar{
+    background-color: aquamarine;
+}
+
+.upgrade{
+    background-color: crimson;
+}
+/*Responsive*/ 
+
+@media screen and (min-width: 480px) {
+    
+}
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1100px) {
+    
+}
