@@ -29,35 +29,38 @@ ul{
     text-decoration: none;
 }
 
-.conteiner{
+.container{
     max-width: 1152px;
     width: 80%;
     margin: auto;
-}
-/*Debug*/
-#app_footer{
-    background-color: var(--footer);
-}
-
-.side-top, .side-bottom{
-    border: 1px dashed red;
-    height: 50%;
-}
-
-#app_footer .left,
-#app_footer .center,
-#app_footer .right{
-    border: 1px solid blue;
 }
 
 
 /*Responsive*/ 
 @media screen and (min-width: 480px) {
- 
+   .top .sidebar{
+    width: 200px;
+    align-items: flex-start;
+   }
+
+   .top .sidebar .side-top .item span{
+    display: block;
+   }
+
+   .top .sidebar .special img{
+    width: 40px;
+    padding: 1rem 0;
+   }
+
+   .top .sidebar .side-top .special span{
+    font-size: 20px;
+    color: var(--light);
+    padding: 1rem 0;
+   }
 }
 
 @media screen and (min-width: 768px) {
- 
+    
 }
 
 @media screen and (min-width: 1100px) {
@@ -75,7 +78,55 @@ ul{
 .sidebar{
     width:50px;
     background-color: var(--dark);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sidebar .side-top{
+    height: calc(100% - 80px);
     
+    padding: 0.3rem 0.5rem;
+}
+
+.sidebar .side-top img{
+    width: 30px;
+    margin-top: 2px;
+    padding: 2px 0;
+}
+
+.sidebar .side-bottom {
+    height: 80px; 
+}
+
+.sidebar .side-top .item{
+    color: var(--lightgrey);
+    display: flex;
+    line-height: 3rem;  
+}
+
+.sidebar .side-top .item span{
+    font-size: 12px;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.sidebar .side-bottom i{
+    color: var(--light);
+    padding-bottom: 1.2rem;
+}
+
+.sidebar .side-bottom .profile{
+    background-color: var(--lightgrey);
+    width: 30px;
+    border-radius: 30px;
+}
+
+.sidebar .side-bottom .profile img{
+    width: 20px;
 }
 
 /*Content*/
@@ -93,8 +144,7 @@ ul{
     color: var(--light);
     text-transform: uppercase;
     border: 1px solid var(--light);
-    border-radius: 2rem;
-    
+    border-radius: 2rem;  
 }
 
 .content{
@@ -120,7 +170,15 @@ ul{
 /*Footer*/
 
 #app_footer{
+    background-color: var(--footer);
+
+    width: 100%;
     height: 70px;
+    position: fixed;
+    bottom: 0;
+
+    z-index: 1000;
+
 }
 
 
