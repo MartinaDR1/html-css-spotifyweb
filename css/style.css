@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #141922;
+    --dark: #000000;
+    --light: #ffffff;
+    --footer: #282828;
+    --lightgrey: #a3a3a3;
+    --details: #b5f62f;
+}
