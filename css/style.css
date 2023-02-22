@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
 :root{
     --primary: #141922;
     --dark: #000000;
+    --light_dark:#080b12;
     --light: #ffffff;
     --footer: #282828;
     --lightgrey: #a3a3a3;
@@ -20,22 +24,19 @@
 ul{
     list-style: none;
 }
-/*Debug*/
 
-.top{
-    background-color: coral;
+.no_dec{
+    text-decoration: none;
 }
 
+.conteiner{
+    max-width: 1152px;
+    width: 80%;
+    margin: auto;
+}
+/*Debug*/
 #app_footer{
     background-color: var(--footer);
-}
-
-.sidebar{
-    background-color: aquamarine;
-}
-
-.upgrade{
-    background-color: crimson;
 }
 
 .side-top, .side-bottom{
@@ -51,49 +52,70 @@ ul{
 
 
 /*Responsive*/ 
-
 @media screen and (min-width: 480px) {
-    
+ 
 }
+
 @media screen and (min-width: 768px) {
-    
+ 
 }
 
 @media screen and (min-width: 1100px) {
-    
-    
+
 }
 
 /*Top*/
 .top{
     height: calc(100vh - 70px);
+    background-color: var(--primary);
 }
 
 /*Sidebar*/
 
 .sidebar{
-    width:70px;
-}
+    width:50px;
+    background-color: var(--dark);
     
+}
 
 /*Content*/
 
 .upgrade{
-    height: 50px;
+    height: 80px;
     text-align: end;
+    background-color: var(--light_dark);
+    padding: 1.5rem 0.3rem;
 }
+
+.upgrade .btn{
+    padding: 0.5rem 2rem;
+    background-color: var(--light_dark);
+    color: var(--light);
+    text-transform: uppercase;
+    border: 1px solid var(--light);
+    border-radius: 2rem;
     
+}
+
 .content{
     width: calc(100% - 50px);
 }
  
 .content nav ul{
+    flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center
 }
 
 .content nav li{
-    margin-left: 5rem;
+    padding: 1rem 0;
+    margin:0 1rem;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.content nav li a {
+    color: var(--lightgrey);
 }
 /*Footer*/
 
