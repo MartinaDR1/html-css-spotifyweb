@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Circular Std', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
+
 :root{
     --primary: #141922;
     --dark: #000000;
@@ -35,6 +40,9 @@ ul{
     margin: auto;
 }
 
+.lightgrey{
+    color: var(--lightgrey);
+}
 
 /*Responsive*/ 
 @media screen and (min-width: 480px) {
@@ -43,10 +51,12 @@ ul{
     align-items: flex-start;
    }
 
-   .top .sidebar .side-top .item span{
+   .top .sidebar .side-top .item span,
+   .top .sidebar .side-bottom .item span,
+   .top .sidebar .side-bottom .item h5{
     display: block;
    }
-
+   
    .top .sidebar .special img{
     width: 40px;
     padding: 1rem 0;
@@ -56,6 +66,14 @@ ul{
     font-size: 20px;
     color: var(--light);
     padding: 1rem 0;
+   }
+
+   .top .sidebar .side-bottom hr{
+    display: block;
+   }
+
+   .top .sidebar .side-top .playlist{
+    display: block;
    }
 }
 
@@ -83,12 +101,10 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .sidebar .side-top{
     height: calc(100% - 80px);
-    
     padding: 0.3rem 0.5rem;
 }
 
@@ -98,35 +114,86 @@ ul{
     padding: 2px 0;
 }
 
-.sidebar .side-bottom {
-    height: 80px; 
-}
-
 .sidebar .side-top .item{
-    color: var(--lightgrey);
     display: flex;
     line-height: 3rem;  
 }
 
-.sidebar .side-top .item span{
+.sidebar .side-top .grey img,
+.sidebar .side-bottom .grey img{
+    filter: invert(50%);
+}
+
+.sidebar .side-top .item span,
+.sidebar .side-bottom .item span{
     font-size: 12px;
     margin-left: 0.5rem;
+    display: none;
+}
+
+.sidebar .side-bottom {
+    width: 100%;
+    height: 80px;
+}
+
+.sidebar .side-bottom hr{
+    width: 85%;
+    margin: auto;
     display: none;
 }
 
 .sidebar .side-bottom i{
     color: var(--light);
     padding-bottom: 1.2rem;
+    padding-left: 0.7rem;
 }
 
 .sidebar .side-bottom .profile{
     background-color: var(--lightgrey);
     width: 30px;
     border-radius: 30px;
+    margin-top: 0.7rem;
+    margin-left: 0.3rem;
 }
 
 .sidebar .side-bottom .profile img{
     width: 20px;
+}
+
+.sidebar .side-bottom .item{
+    display: flex;
+    line-height: 1rem;  
+}
+
+.sidebar .side-bottom .item h5{
+    color: var(--light);
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    display: none;
+}
+
+/*Playlist*/
+.playlist{
+    text-align: start;
+    display: none;
+}
+
+.playlist h5{
+    color: var(--light);
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+.playlist button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--lightgrey);
+}
+
+.playlist ul li{
+    line-height: 1.5rem;
+    font-size: 12px;
+    overflow-y: auto;
 }
 
 /*Content*/
@@ -167,6 +234,7 @@ ul{
 .content nav li a {
     color: var(--lightgrey);
 }
+
 /*Footer*/
 
 #app_footer{
@@ -174,11 +242,10 @@ ul{
 
     width: 100%;
     height: 70px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
 
     z-index: 1000;
-
 }
 
 
