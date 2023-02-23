@@ -44,6 +44,12 @@ ul{
     color: var(--lightgrey);
 }
 
+.col_6{
+    width: calc(100% / 12 * 6 - 1rem);
+    padding-left: 1rem;
+    aspect-ratio: 1/1;
+}
+
 /*Responsive*/ 
 @media screen and (min-width: 480px) {
    .top .sidebar{
@@ -78,11 +84,21 @@ ul{
 }
 
 @media screen and (min-width: 768px) {
-    
+    .col_md_3{
+        width: calc(100% / 12 * 3 - 1rem);
+        aspect-ratio: 1/1;
+        padding-left: 1rem;
+    }
 }
 
 @media screen and (min-width: 1100px) {
+   .col_lg_2{
+    width: calc(100% / 12 * 2 - 1rem);
+    aspect-ratio: 1/1;
+    padding-left: 1rem;
+   }
 
+   
 }
 
 /*Top*/
@@ -91,7 +107,7 @@ ul{
     background-color: var(--primary);
 }
 
-/*Sidebar*/
+/* #region Sidebar*/
 
 .sidebar{
     width:50px;
@@ -196,6 +212,8 @@ ul{
     overflow-y: auto;
 }
 
+/* #endregion Sidebar*/
+
 /*Content*/
 
 .upgrade{
@@ -233,6 +251,34 @@ ul{
 
 .content nav li a {
     color: var(--lightgrey);
+}
+
+/* Cover*/
+
+.content .cover{
+    padding: 1rem 2rem;
+    overflow-y: auto;
+    height: calc(100% - 80px - 50px)
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.content .row .image img{
+    width: 100%;
+}
+
+.content .row .text{
+    text-align: center;
+}
+
+.content .row .text h5{
+    color: var(--light);
+}
+
+.content .row .text span{
+    font-size: 12px;
 }
 
 /*Footer*/
