@@ -51,8 +51,15 @@ ul{
     aspect-ratio: 1/1;
 }
 
+
 /*Responsive*/ 
 @media screen and (min-width: 480px) {
+    
+    .top .sidebar{
+        width: 550px;
+        align-items: flex-start;
+    }
+
     .sidebar .border{
         height: 2.5rem;
         width: 0.2rem;
@@ -65,11 +72,6 @@ ul{
         margin-left: -0.8rem;
     }
 
-   .top .sidebar{
-    width: 200px;
-    align-items: flex-start;
-   }
-
    .top .sidebar .side-top .item span,
    .top .sidebar .side-bottom .item span,
    .top .sidebar .side-bottom .item h5{
@@ -77,7 +79,7 @@ ul{
    }
    
    .top .sidebar .special img{
-    width: 30px;
+    width: 40px;
     padding: 1rem 0;
    }
 
@@ -148,16 +150,18 @@ ul{
 
 .sidebar{
     width:50px;
+    height: calc(100vh - 70px);
+  
     background-color: var(--dark);
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+;
 }
 
 .sidebar .side-top{
-    height: calc(100% - 80px);
     padding: 0.3rem 0.5rem;
 }
 
@@ -187,6 +191,11 @@ ul{
 .sidebar .side-bottom {
     width: 100%;
     height: 80px;
+    
+    background-color: var(--dark);
+
+    margin-left: -0.5rem;
+    margin-top: 1.5rem;
 }
 
 .sidebar .side-bottom hr{
@@ -348,13 +357,14 @@ ul{
 /* #endregion Cover*/
 
 
-/*Footer*/
+/* #region Footer*/
 
 #app_footer{
     background-color: var(--footer);
 
     width: 100%;
     height: 70px;
+
     position: sticky;
     bottom: 0;
 
@@ -459,7 +469,8 @@ ul{
 #app_footer .right .icon i{
     color: var(--light);
     padding-bottom: 0.5rem;
-    vertical-align:middle;
+    margin-right: 0.2rem;
+   vertical-align:middle;
 }
 
 #app_footer .right {
@@ -468,12 +479,12 @@ ul{
 }
 
 #app_footer .right .bar{
-    width: 5rem;
+    width: 4rem;
     height: 0.3rem;
     background-color: var(--lightgrey);
     border-radius: 50px;
-    margin-left: 0.3rem;
-    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
 }
 
 #app_footer .right .bar .reproduction{
@@ -482,3 +493,5 @@ ul{
     background-color: var(--light);
     border-radius: 50px;
 }
+
+/* #endregion Footer*/
