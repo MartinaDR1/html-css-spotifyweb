@@ -46,12 +46,23 @@ ul{
 
 .col_6{
     width: calc(100% / 12 * 6 - 1rem);
-    padding-left: 1rem;
+    padding-right: 1rem;
     aspect-ratio: 1/1;
 }
 
 /*Responsive*/ 
 @media screen and (min-width: 480px) {
+    .sidebar .border{
+        height: 2.5rem;
+        width: 0.2rem;
+        background-color: var(--details);
+        border-radius: 20px;
+        margin-top: 0.5rem;
+    }
+    #home{
+        margin-left: -0.8rem;
+    }
+
    .top .sidebar{
     width: 200px;
     align-items: flex-start;
@@ -87,7 +98,7 @@ ul{
     .col_md_3{
         width: calc(100% / 12 * 3 - 1rem);
         aspect-ratio: 1/1;
-        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -95,7 +106,7 @@ ul{
    .col_lg_2{
     width: calc(100% / 12 * 2 - 1rem);
     aspect-ratio: 1/1;
-    padding-left: 1rem;
+    padding-right: 1rem;
    }
 
    
@@ -188,6 +199,7 @@ ul{
     display: none;
 }
 
+
 /*Playlist*/
 .playlist{
     text-align: start;
@@ -214,7 +226,7 @@ ul{
 
 /* #endregion Sidebar*/
 
-/*Content*/
+/*#region Content*/
 
 .upgrade{
     height: 80px;
@@ -253,16 +265,36 @@ ul{
     color: var(--lightgrey);
 }
 
-/* Cover*/
+.content .border{
+    height: 0.2rem;
+    width: 40%;
+    margin: auto;
+    background-color: var(--details);
+    border-radius: 20px;
+    margin-top: 0.2rem;
+}
+/*#endregion Content*/
+
+
+/* #region Cover*/
 
 .content .cover{
     padding: 1rem 2rem;
-    overflow-y: auto;
+    overflow-y: auto; 
     height: calc(100% - 80px - 50px)
+}
+
+.content .cover h3{
+    color: var(--light);
+    padding: 0.7rem 0;
 }
 
 .row{
     flex-wrap: wrap;
+}
+
+.content .row .image{
+    padding-top: 0.5rem;
 }
 
 .content .row .image img{
@@ -280,6 +312,13 @@ ul{
 .content .row .text span{
     font-size: 12px;
 }
+
+.content .row .circle img{
+    border-radius: 50%;
+}
+
+/* #endregion Cover*/
+
 
 /*Footer*/
 
