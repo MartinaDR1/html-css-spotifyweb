@@ -110,6 +110,9 @@ ul{
     padding: 1rem 0;
    }
 
+   .top .sidebar .side-top .special span:hover{
+    font-size: 20px;
+   }
    .top .sidebar .side-bottom hr{
     display: block;
    }
@@ -280,6 +283,18 @@ ul{
     width: 30px;
     height: 30px;
     background-color: var(--lightgrey);
+
+    transition: 2s;
+}
+
+.playlist button:hover{
+    background-color: var(--light);
+    transform: scale(1.1);
+}
+
+.playlist button i:hover{
+    color: var(--details);
+    transform: scale(1.1);
 }
 
 .playlist ul{
