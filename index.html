@@ -28,17 +28,17 @@
                 <div id="home" class="item grey">
                     <span class="border"></span>
                     <img src="./img/home.svg" alt="">
-                    <span class="lightgrey">Home</span>
+                    <a class="no_dec lightgrey">Home</a>
                 </div>
                 
                 <div class="item grey">
                     <img src="./img/search.svg" alt="">
-                    <span class="lightgrey">Cerca</span>
+                    <a class="no_dec lightgrey">Cerca</a>
                 </div>
                 
                 <div class="item grey">
                     <img src="./img/libreria.svg" alt="">
-                <span class="lightgrey">La tua libreria</span>
+                <a class="no_dec lightgrey">La tua libreria</a>
                 </div>
                 
                 <div class="playlist">
@@ -64,7 +64,7 @@
             <div class="side-bottom">
                 <div class="item grey">
                     <i class="fa-regular fa-circle-down"></i>
-                    <span class="lightgrey">Installa app</span>
+                    <a class="no_dec lightgrey"> Installa app</a>
                 </div>
                 
                 <hr class="lightgrey">
@@ -82,8 +82,7 @@
 
         <div class="content">
             <div class="upgrade">
-                <button class="btn">Effettua l'upgrade</button>
-                
+                <button class="btn">Effettua l'upgrade</button>  
             </div>
 
             <nav class="container">
@@ -104,9 +103,15 @@
                 
                 <div class="row flex">
                     <div class="col_6 col_md_3 col_lg_2">
-                        <div class="image">
+
+                       <div class="image">
                             <img src="./img/metal_lifting.jpg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
+
                         <div class="text">
                             <h5>Heavy Metal</h5>
                             <span class="lightgrey">Subtitle</span>
@@ -116,6 +121,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/stranger.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Stranger Things,Vol.1 (a Netflix Original Series Spundtrack)</h5>
@@ -126,6 +135,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/aquietplace.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>A quiet place</h5>
@@ -136,6 +149,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/split.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Split</h5>
@@ -146,6 +163,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/cure.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>A cure for wellness</h5>
@@ -156,6 +177,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/sinister.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Sinister</h5>
@@ -170,6 +195,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/radar.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Release radar</h5>
@@ -179,6 +208,10 @@
                     <div class="col_6 col_md_3 col_lg_2">
                         <div class="image">
                             <img src="./img/mixdaily.jpeg" alt="">
+
+                            <div class="overlay">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Daily Mix 1</h5>
@@ -193,6 +226,10 @@
                     <div class="col_xs_12 col_s_6 col_md_3 col_lg_2">
                         <div class="image circle">
                             <img src="./img/youg.jpeg" alt="">
+
+                            <div class="overlay circle">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Lana Del Rey</h5>
@@ -202,6 +239,10 @@
                     <div class="col_xs_12 col_s_6 col_md_3 col_lg_2">
                         <div class="image circle">
                             <img src="./img/einaudi.jpeg" alt="">
+
+                            <div class="overlay circle">
+                                <button><i class="fa-regular fa-circle-play fa-fa fa-4x"></i></button>
+                            </div>
                         </div>
                         <div class="text">
                             <h5>Einaudi</h5>
@@ -240,7 +281,9 @@
             <div class="audio flex">
                 <span>0:25</span>
                 <div class="bar">
-                    <div class="reproduction"></div>
+                    <div class="reproduction">
+                        <div class="dot"></div>
+                    </div>
                 </div>
                 <span>4:35</span>
             </div>
@@ -252,7 +295,9 @@
             <button><i class="fa-solid fa-display fa-fa"></i></button>
             <button><i class="fa-solid fa-volume-high fa-fa"></i></button>
             <div class="bar">
-                <div class="reproduction"></div>
+                <div class="reproduction">
+                    <div class="dot"></div>
+                </div>
             </div>  
         </div>
     </div>
